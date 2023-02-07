@@ -7,7 +7,7 @@ const TargetType = require('../../extension-support/target-type');
 const axios = require('axios');
 
 class DeveloperExtension {
-    _debug = '';
+    // _debug = '';
 
     /**
      *
@@ -192,7 +192,7 @@ class DeveloperExtension {
      * @param {*} args
      * @param {string} args.OBJECT
      * @param {string} args.PATH can be dot notation syntax
-     * @returns
+     * @returns {any}
      */
     get_object_val (args){
         console.log('get_object_val args', args);
@@ -219,7 +219,7 @@ class DeveloperExtension {
     /**
      *
      * @param {*} args
-     * @returns
+     * @returns {string}
      * @TODO support dot notation
      */
     set_object_val (args){
@@ -235,7 +235,7 @@ class DeveloperExtension {
      * @param {object} args
      * @param {BlockUtility} info
      * @param {object} block
-     * @returns
+     * @returns {any}
      */
     ternary (args, info, block) {
         // console.log('ternary args!', {args, info, block});
